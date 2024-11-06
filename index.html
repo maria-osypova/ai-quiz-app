@@ -3,17 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Homepage</title>
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="home-page">
     <svg style="display: none">
       <defs>
         <symbol
           id="icon-bookmark"
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -24,7 +22,6 @@
         <symbol
           id="icon-home"
           viewBox="0 0 24 24"
-          fill="none"
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
@@ -67,31 +64,25 @@
                 <use xlink:href="#icon-bookmark"></use>
               </svg>
             </button>
-            <button class="show-answer" onclick="oggleAnswer(this)">
-              show answer
-            </button>
+            <button class="show-answer">show answer</button>
             <p class="answer-hiddin">artificial intelligence</p>
-            <div class="answer-options">
-              <button class="answer__option">artificial innovation</button>
-              <button class="answer__option">artificial intelligence</button>
-              <button class="answer__option">automated information</button>
+            <div class="tags">
+              <button class="answer__option">#ai</button>
+              <button class="answer__option">#basic</button>
             </div>
           </li>
           <li class="question">
             <p class="question__text">Who is known as the "father of AI"?</p>
-            <button class="question__bookmark">
+            <button class="question__bookmark question__bookmark--active">
               <svg width="24" height="24" class="icon">
                 <use xlink:href="#icon-bookmark"></use>
               </svg>
             </button>
-            <button class="show-answer" onclick="oggleAnswer(this)">
-              show answer
-            </button>
+            <button class="show-answer">show answer</button>
             <p class="answer-hiddin">Alan Turing</p>
-            <div class="answer-options">
-              <button class="answer__option">Albert Einstein</button>
-              <button class="answer__option">Alan Turing</button>
-              <button class="answer__option">Marvin Minsky</button>
+            <div class="tags">
+              <button class="answer__option">#ai</button>
+              <button class="answer__option">#basic</button>
             </div>
           </li>
           <li class="question">
@@ -103,14 +94,28 @@
                 <use xlink:href="#icon-bookmark"></use>
               </svg>
             </button>
-            <button class="show-answer" onclick="oggleAnswer(this)">
-              show answer
-            </button>
+            <button class="show-answer">show answer</button>
             <p class="answer-hiddin">machine learning</p>
-            <div class="answer-options">
-              <button class="answer__option">expert systems</button>
-              <button class="answer__option">machine learning</button>
-              <button class="answer__option">rule-based systems</button>
+            <div class="tags">
+              <button class="answer__option">#methods</button>
+              <button class="answer__option">#data</button>
+            </div>
+          </li>
+          <li class="question">
+            <p class="question__text">
+              Which part of AI focuses on teaching computers to understand and
+              generate human language?
+            </p>
+            <button class="question__bookmark question__bookmark--active">
+              <svg width="24" height="24" class="icon">
+                <use xlink:href="#icon-bookmark"></use>
+              </svg>
+            </button>
+            <button class="show-answer">show answer</button>
+            <p class="answer-hiddin">Natural Language Processing - NLP</p>
+            <div class="tags">
+              <button class="answer__option">#ai</button>
+              <button class="answer__option">#text</button>
             </div>
           </li>
         </ul>
@@ -118,14 +123,18 @@
       <footer>
         <div class="footer">
           <button class="footer__home">
-            <svg width="24" height="24" class="icon">
-              <use xlink:href="#icon-home"></use>
-            </svg>
+            <a href="index.html">
+              <svg width="24" height="24" class="icon">
+                <use xlink:href="#icon-home"></use>
+              </svg>
+            </a>
           </button>
           <button class="footer__bookmark">
-            <svg width="24" height="24" class="icon">
-              <use xlink:href="#icon-bookmark"></use>
-            </svg>
+            <a href="bookmarks.html">
+              <svg width="24" height="24" class="icon">
+                <use xlink:href="#icon-bookmark"></use>
+              </svg>
+            </a>
           </button>
           <button class="footer__profile">
             <svg width="24" height="24" class="icon">
