@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <svg style="display: none">
+      <defs>
+        <symbol
+          id="icon-bookmark"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 21l-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+        </symbol>
+
+        <symbol
+          id="icon-home"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+          <path
+            d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+          />
+        </symbol>
+
+        <symbol
+          id="icon-profile"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M2 21a8 8 0 0 1 10.821-7.487" />
+          <path
+            d="M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"
+          />
+          <circle cx="10" cy="8" r="5" />
+        </symbol>
+      </defs>
+    </svg>
+    <header class="header">
+      <h1 class="header__title">AI quiz</h1>
+    </header>
+
+    <main class="main-content">
+      <section class="questions">
+        <ul class="questions__list">
+          <li class="question">
+            <p class="question__text">What does AI stand for?</p>
+            <button class="question__bookmark">
+              <svg width="24" height="24" class="icon">
+                <use xlink:href="#icon-bookmark"></use>
+              </svg>
+            </button>
+            <button class="show-answer" onclick="oggleAnswer(this)">
+              show answer
+            </button>
+            <p class="answer-hiddin">artificial intelligence</p>
+            <div class="answer-options">
+              <button class="answer__option">artificial innovation</button>
+              <button class="answer__option">artificial intelligence</button>
+              <button class="answer__option">automated information</button>
+            </div>
+          </li>
+          <li class="question">
+            <p class="question__text">Who is known as the "father of AI"?</p>
+            <button class="question__bookmark">
+              <svg width="24" height="24" class="icon">
+                <use xlink:href="#icon-bookmark"></use>
+              </svg>
+            </button>
+            <button class="show-answer" onclick="oggleAnswer(this)">
+              show answer
+            </button>
+            <p class="answer-hiddin">Alan Turing</p>
+            <div class="answer-options">
+              <button class="answer__option">Albert Einstein</button>
+              <button class="answer__option">Alan Turing</button>
+              <button class="answer__option">Marvin Minsky</button>
+            </div>
+          </li>
+          <li class="question">
+            <p class="question__text">
+              Which of these is a type of AI that learns from data?
+            </p>
+            <button class="question__bookmark">
+              <svg width="24" height="24" class="icon">
+                <use xlink:href="#icon-bookmark"></use>
+              </svg>
+            </button>
+            <button class="show-answer" onclick="oggleAnswer(this)">
+              show answer
+            </button>
+            <p class="answer-hiddin">machine learning</p>
+            <div class="answer-options">
+              <button class="answer__option">expert systems</button>
+              <button class="answer__option">machine learning</button>
+              <button class="answer__option">rule-based systems</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <footer>
+        <div class="footer">
+          <button class="footer__home">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="#icon-home"></use>
+            </svg>
+          </button>
+          <button class="footer__bookmark">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="#icon-bookmark"></use>
+            </svg>
+          </button>
+          <button class="footer__profile">
+            <svg width="24" height="24" class="icon">
+              <use xlink:href="#icon-profile"></use>
+            </svg>
+          </button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
