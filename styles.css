@@ -273,3 +273,7 @@ header {
 .settings-card__option {
   width: 100%;
 }
+
+.hidden {
+  display: none;
+}

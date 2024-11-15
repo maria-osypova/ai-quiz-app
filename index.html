@@ -59,13 +59,17 @@
         <ul class="questions__list">
           <li class="question">
             <p class="question__text">What does AI stand for?</p>
-            <button class="question__bookmark">
+            <button class="question__bookmark" data-js="question-bookmark">
               <svg width="24" height="24" class="icon">
                 <use xlink:href="#icon-bookmark"></use>
               </svg>
             </button>
-            <button class="show-answer">show answer</button>
-            <p class="answer-hiddin">artificial intelligence</p>
+            <button class="show-answer" data-js="show-answer-button">
+              show answer
+            </button>
+            <p class="answer-hidden" data-js="answer-hidden-text">
+              artificial intelligence
+            </p>
             <div class="tags">
               <button class="answer__option">#ai</button>
               <button class="answer__option">#basic</button>
