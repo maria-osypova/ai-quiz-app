@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Add New Card</title>
     <link href="styles.css" rel="stylesheet" />
-    <script src="./js/index.js" defer></script>
   </head>
-  <body class="home-page">
+  <body class="form-page">
     <svg style="display: none">
       <defs>
         <symbol
@@ -37,6 +36,7 @@
         <symbol
           id="icon-profile"
           viewBox="0 0 24 24"
+          fill="none"
           stroke="currentColor"
           stroke-width="2"
           stroke-linecap="round"
@@ -68,75 +68,30 @@
     </header>
 
     <main class="main-content">
-      <section class="questions">
-        <ul class="questions__list">
-          <li class="question">
-            <p class="question__text">What does AI stand for?</p>
-            <button class="question__bookmark" data-js="question-bookmark">
-              <svg width="24" height="24" class="icon">
-                <use xlink:href="#icon-bookmark"></use>
-              </svg>
-            </button>
-            <button class="show-answer" data-js="show-answer-button">
-              show answer
-            </button>
-            <p class="answer-hidden" data-js="answer-hidden-text">
-              artificial intelligence
-            </p>
-            <div class="tags">
-              <button class="answer__option">#ai</button>
-              <button class="answer__option">#basic</button>
-            </div>
-          </li>
-          <li class="question">
-            <p class="question__text">Who is known as the "father of AI"?</p>
-            <button class="question__bookmark question__bookmark--active">
-              <svg width="24" height="24" class="icon">
-                <use xlink:href="#icon-bookmark"></use>
-              </svg>
-            </button>
-            <button class="show-answer">show answer</button>
-            <p class="answer-hiddin">Alan Turing</p>
-            <div class="tags">
-              <button class="answer__option">#ai</button>
-              <button class="answer__option">#basic</button>
-            </div>
-          </li>
-          <li class="question">
-            <p class="question__text">
-              Which of these is a type of AI that learns from data?
-            </p>
-            <button class="question__bookmark">
-              <svg width="24" height="24" class="icon">
-                <use xlink:href="#icon-bookmark"></use>
-              </svg>
-            </button>
-            <button class="show-answer">show answer</button>
-            <p class="answer-hiddin">machine learning</p>
-            <div class="tags">
-              <button class="answer__option">#methods</button>
-              <button class="answer__option">#data</button>
-            </div>
-          </li>
-          <li class="question">
-            <p class="question__text">
-              Which part of AI focuses on teaching computers to understand and
-              generate human language?
-            </p>
-            <button class="question__bookmark question__bookmark--active">
-              <svg width="24" height="24" class="icon">
-                <use xlink:href="#icon-bookmark"></use>
-              </svg>
-            </button>
-            <button class="show-answer">show answer</button>
-            <p class="answer-hiddin">Natural Language Processing - NLP</p>
-            <div class="tags">
-              <button class="answer__option">#ai</button>
-              <button class="answer__option">#text</button>
-            </div>
-          </li>
-        </ul>
-      </section>
+      <form class="new-card-form" data-js="new-card-form">
+        <fieldset class="new-card-form_conteiner">
+          <label for="your-question">Your question:</label>
+          <textarea name="yourQuestion" id="your-question" rows="4" required>
+&#8203;</textarea
+          >
+
+          <label for="your-answer">Your answer:</label>
+          <textarea name="yourAnswer" id="your-answer" rows="4" required>
+&#8203;</textarea
+          >
+
+          <label for="your-question-tag">Tag:</label>
+          <input
+            type="text"
+            id="your-question-tag"
+            placeholder="#tag"
+            required
+          />
+
+          <button type="submit" class="subbmit-button">subbmit</button>
+        </fieldset>
+      </form>
+
       <footer>
         <div class="footer">
           <button class="footer__home">
